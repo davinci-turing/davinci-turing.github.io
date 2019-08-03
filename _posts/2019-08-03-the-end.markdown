@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "结束"
+date:   2019-08-03 23:11:00 +0800
+categories: 日记
+---
+
+要想有新的开始，首先要旧的结束。
+
+git: use ssh key
+
+https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+https://help.github.com/en/articles/working-with-ssh-key-passphrases
+https://help.github.com/en/articles/setting-your-username-in-git
+https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent
