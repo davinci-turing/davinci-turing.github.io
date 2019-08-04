@@ -2,6 +2,7 @@
 layout: post
 title:  "结束"
 date:   2019-08-03 23:11:00 +0800
+date_update: 2019-08-03 23:11:00 +0800
 categories: 日记
 ---
 
@@ -14,3 +15,7 @@ https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
 https://help.github.com/en/articles/working-with-ssh-key-passphrases
 https://help.github.com/en/articles/setting-your-username-in-git
 https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent
+
+
+https://geektutu.com/post/blog-experience-1.html
+https://yelog.org/2017/03/23/3-hexo-instruction/
