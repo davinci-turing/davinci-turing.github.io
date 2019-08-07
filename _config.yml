@@ -31,3 +31,8 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+encoding: utf-8
+permalink: /blog/:year:month:day/:title.html
+sass:
+  style: :compressed
