@@ -35,10 +35,16 @@ author: 幽玄
 之前买了苋菜，结果到晚上发现很多都烂了，才知道这种蔬菜得当天买当天做了吃，要不然容易烂，尤其是洗过之后（感觉超市上架之前可能用水冲过？）。第二天做菜的时候扔了很多，最后炒出来只有碗底的一点点。
 
 <span>&#9876;</span>**记录几个代码**：
-- 一个交通流量预测的代码：[bbklk/LRA-for-traffic-flow-forecasting](https://github.com/bbklk/LRA-for-traffic-flow-forecasting)。这个可能主要是帮助了解一下任务和数据集。
-- DeepGCN的代码：[lightaime/deep_gcns](https://github.com/lightaime/deep_gcns)，这是ICCV 2019的Oral论文，项目主页：[Can GCNs Go as Deep as CNNs?](https://sites.google.com/view/deep-gcns)，给出了Tensorflow和Pytorch的实现。
+- 一个交通流量预测的代码：
+{% include icon-github.html username="bbklk" %} /
+[LRA-for-traffic-flow-forecasting](https://github.com/bbklk/LRA-for-traffic-flow-forecasting)。这个可能主要是帮助了解一下任务和数据集。
+- DeepGCN的代码：
+{% include icon-github.html username="lightaime" %} /
+[deep_gcns](https://github.com/lightaime/deep_gcns)，这是ICCV 2019的Oral论文，项目主页：[Can GCNs Go as Deep as CNNs?](https://sites.google.com/view/deep-gcns)，给出了Tensorflow和Pytorch的实现。
 - RetinaFace的代码：[deepinsight/insightface/RetinaFace](https://github.com/deepinsight/insightface/tree/master/RetinaFace)。
-- CVPR 2018的工作，Structure Inference Net：[choasup/SIN](https://github.com/choasup/SIN)；另外这似乎是作者的博客：[Choas Blog 有一个梦想 并非遥不可及](https://choasup.github.io/)。
+- CVPR 2018的工作，Structure Inference Net：
+{% include icon-github.html username="choasup" %} /
+[SIN](https://github.com/choasup/SIN)；另外这似乎是作者的博客：[Choas Blog 有一个梦想 并非遥不可及](https://choasup.github.io/)。
 
 <span>&#9876;</span>**关于二次型的最大和最小值**，要求是单位向量，那解就是矩阵的最大和最小特征值，可以用拉格朗日乘数法求解，参考资料：[William F. Trench - THE METHOD OF
 LAGRANGE MULTIPLIERS](http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_LAGRANGE_MULTIPLIERS.PDF)（第9页）。
