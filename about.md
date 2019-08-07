@@ -4,12 +4,4 @@ title: 关于
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+本来凑出“幽玄”这个词是想取幽静、幽深、神秘等意思，没想到真有一个这样的词，但是是日本文化中的一个概念，可以参考知乎上相关的解释：[知乎 - 日本文化中「侘寂、幽玄、物哀」三者有何区别？](https://www.zhihu.com/question/24982618)，[知乎 - 如何理解日本美学中的 “物哀” 、“ 艳情 ”、 “寂灭” 、 “幽玄”？](https://www.zhihu.com/question/23634160)。然而我的本意还是取汉字本来的意义，想自己造一个搭配，和日本文化或者其它已有的东西没关系。不过暂时也不想改了，就先这样吧。
