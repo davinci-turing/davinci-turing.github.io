@@ -2,8 +2,8 @@
 layout: post
 title:  "结束"
 date:   2019-08-03 23:11:00 +0800
-date_update: 2019-08-03 23:11:00 +0800
-categories: 日记
+date_update: 2019-08-07 12:36:00 +0800
+categories: 流水账
 ---
 
 要想有新的开始，首先要旧的结束。
