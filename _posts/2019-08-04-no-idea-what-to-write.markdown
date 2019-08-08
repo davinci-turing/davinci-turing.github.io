@@ -2,10 +2,11 @@
 layout: post
 title:  "不是迷途的羔羊"
 date:   2019-08-04 21:30:00 +0800
-date_update: 2019-08-07 17:20:00 +0800
+date_update: 2019-08-09 01:02:00 +0800
 categories: 流水账
 tags: [心情,随想,记录]
 author: 幽玄
+use_mathjax: true
 ---
 
 ## 2019.8.4
@@ -58,3 +59,21 @@ HTML中的一些特殊符号：[W3Schools - UTF-8 Miscellaneous Symbols - Range:
 网易云音乐上一个感觉不错的歌单：[咕噜咕噜patience - 沈以诚\徐秉龙\方宇杰\焦迈奇\孟凡明\姜鹏](https://music.163.com/playlist?id=2220042776&userid=525816)。
 
 好了，今天的流水账就记到这里吧。
+
+## 2019.8.8
+
+[知乎专栏 - 空调一开一关费电，还是一直开着费电？](https://zhuanlan.zhihu.com/p/40331879)结论就是一开一关更加费电，可能的原因在于“由于空调在启动时的瞬时电流往往较大，如果反复启动，耗电量会相应增加，同时不利于空调的保养。”
+
+[CCAI2018演讲实录 - 蒲慕明：脑科学与类脑机器学习2018-10-16](https://pan.baidu.com/s/1B7-phZ0ibT8LCYrqRWItAQ)。
+
+<span>&#9876;</span>**加性高斯过程**，发表于NIPS 2011：[Additive Gaussian Processes (NIPS 2011)](https://papers.nips.cc/paper/4221-additive-gaussian-processes)，[arXiv 1112.4394](https://arxiv.org/abs/1112.4394)。二作的个人主页：[Hannes Nickisch](http://hannes.nickisch.org/)。
+
+关于各种免费图床：[知乎专栏 - 盘点一下免费好用的图床](https://zhuanlan.zhihu.com/p/35270383)，感觉可以考虑[SM.MS](https://sm.ms/)，试了一下，不需要注册，可以直接粘贴图像内容（例如截图之后去网页上直接粘贴），还提供各种引用格式（例如HTML、Markdown等），挺好用的。但是我想尽量还是别用太多图，因为图通常本身比较大，可能耗费流量，也影响页面加载速度。
+
+对近期图森的工作AlignDet的讨论：[知乎 - 如何评价目标检测模型AlignDet？Revisiting Feature Alignment for One-stage Object Detection](https://www.zhihu.com/question/338959309)。回答里面有提到一些类似和相关的工作：
+- Dual Refinement Networks for Accurate and Fast Object Detection in Real-World Scenes ([arXiv 1807.08638](https://arxiv.org/abs/1807.08638))
+- Propose-and-Attend Single Shot Detector ([arXiv 1907.12736](https://arxiv.org/abs/1907.12736))
+- Cascade RetinaNet: Maintaining Consistency for Single-Stage Object Detection (BMVC 2019, [arXiv 1907.06881](https://arxiv.org/abs/1907.06881))
+- RepPoints: Point Set Representation for Object Detection (ICCV 2019, [arXiv 1904.11490](https://arxiv.org/abs/1904.11490))，另外，RepPoints作者认为图森这个AlignDet的工作是RepPoints的特例（其实就是他们的基线模型），并分析了[实现上的一些差异](https://www.zhihu.com/question/338959309/answer/780428729)。
+
+今天查最大似然估计和最大后验估计的时候，发现[ESL](https://web.stanford.edu/~hastie/ElemStatLearn/)的一个小错误，我手头纸质版本的232页公式(8.23)，分母的积分应该是对参数\\(\theta\\)而不是对数据\\(\mathbf{Z}\\)，否则分母上\\(\mathbf{Z}\\)都积分积没了，怎么会得到“后验”呢。
