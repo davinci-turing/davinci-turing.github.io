@@ -2,8 +2,9 @@
 layout: post
 title:  "结束"
 date:   2019-08-03 23:11:00 +0800
-date_update: 2019-08-07 17:20:00 +0800
+date_update: 2019-08-08 21:18:00 +0800
 categories: 流水账
+use_mathjax: true
 ---
 
 要想有新的开始，首先要将旧的结束。
@@ -19,3 +20,10 @@ https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your
 
 https://geektutu.com/post/blog-experience-1.html
 https://yelog.org/2017/03/23/3-hexo-instruction/
+
+使用[MathJax](https://www.mathjax.org/)的例子：
+
+When \\(a \ne 0\\), there are two solutions to $$ax^2 + bx + c = 0$$ and they are
+\\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\\]
+
+关于Liquid语言：[Liquid - Safe, customer-facing template language for flexible web apps](https://shopify.github.io/liquid/)。
