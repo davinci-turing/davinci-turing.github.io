@@ -2,28 +2,31 @@
 layout: post
 title:  "结束"
 date:   2019-08-03 23:11:00 +0800
-date_update: 2019-08-08 21:18:00 +0800
+date_update: 2019-08-09 16:45:00 +0800
 categories: 流水账
 use_mathjax: true
 ---
 
 要想有新的开始，首先要将旧的结束。
 
-git: use ssh key
+&#9873; Emoji码点列表：[Every Emoji by Codepoint](https://emojipedia.org/emoji/)。用法示例：可以用`&#x1F603;`来引用&#x1F603;。另外，一个Emoji的简介：[阮一峰 - Emoji 简介](http://www.ruanyifeng.com/blog/2017/04/emoji.html)。
 
-https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
-https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
-https://help.github.com/en/articles/working-with-ssh-key-passphrases
-https://help.github.com/en/articles/setting-your-username-in-git
-https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent
+&#9873; HTML特殊符号列表：[W3Schools - UTF-8 Miscellaneous Symbols - Range: Decimal 9728-9983 Hex 2600-26FF](https://www.w3schools.com/charsets/ref_utf_symbols.asp)。用法示例：可以用`&#9834;`来引用&#9834;。
 
+&#9873; Liquid语言文档：[Liquid - Safe, customer-facing template language for flexible web apps](https://shopify.github.io/liquid/)。
 
-https://geektutu.com/post/blog-experience-1.html
-https://yelog.org/2017/03/23/3-hexo-instruction/
-
-使用[MathJax](https://www.mathjax.org/)的例子：
+&#9873; 使用[MathJax](https://www.mathjax.org/)的例子：
 
 When \\(a \ne 0\\), there are two solutions to $$ax^2 + bx + c = 0$$ and they are
 \\[x = {-b \pm \sqrt{b^2-4ac} \over 2a}.\\]
 
-关于Liquid语言：[Liquid - Safe, customer-facing template language for flexible web apps](https://shopify.github.io/liquid/)。
+&#9873; git: use ssh key
+- https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+- https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+- https://help.github.com/en/articles/working-with-ssh-key-passphrases
+- https://help.github.com/en/articles/setting-your-username-in-git
+- https://stackoverflow.com/questions/17846529/could-not-open-a-connection-to-your-authentication-agent
+
+&#9873; 其它
+- https://yelog.org/2017/03/23/3-hexo-instruction/
+- https://geektutu.com/post/blog-experience-1.html

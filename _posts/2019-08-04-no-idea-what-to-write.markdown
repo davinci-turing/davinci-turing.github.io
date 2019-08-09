@@ -54,8 +54,6 @@ LAGRANGE MULTIPLIERS](http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_LAG
 - [CVPR 2019](http://openaccess.thecvf.com/CVPR2019.py)
 - [ICML 2019](https://icml.cc/Conferences/2019/Videos)
 
-HTML中的一些特殊符号：[W3Schools - UTF-8 Miscellaneous Symbols - Range: Decimal 9728-9983 Hex 2600-26FF](https://www.w3schools.com/charsets/ref_utf_symbols.asp)。
-
 网易云音乐上一个感觉不错的歌单：[咕噜咕噜patience - 沈以诚\徐秉龙\方宇杰\焦迈奇\孟凡明\姜鹏](https://music.163.com/playlist?id=2220042776&userid=525816)。
 
 好了，今天的流水账就记到这里吧。
