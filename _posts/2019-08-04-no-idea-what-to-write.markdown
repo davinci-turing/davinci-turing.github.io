@@ -2,7 +2,7 @@
 layout: post
 title:  "不是迷途的羔羊"
 date:   2019-08-04 21:30:00 +0800
-date_update: 2019-08-09 01:02:00 +0800
+date_update: 2019-08-10 00:22:00 +0800
 categories: 流水账
 tags: [心情,随想,记录]
 author: 幽玄
@@ -35,7 +35,7 @@ use_mathjax: true
 
 之前买了苋菜，结果到晚上发现很多都烂了，才知道这种蔬菜得当天买当天做了吃，要不然容易烂，尤其是洗过之后（感觉超市上架之前可能用水冲过？）。第二天做菜的时候扔了很多，最后炒出来只有碗底的一点点。
 
-<span>&#9876;</span>**记录几个代码**：
+&#9876;**记录几个代码**：
 - 一个交通流量预测的代码：
 {% include icon-github.html username="bbklk" %} /
 [LRA-for-traffic-flow-forecasting](https://github.com/bbklk/LRA-for-traffic-flow-forecasting)。这个可能主要是帮助了解一下任务和数据集。
@@ -47,7 +47,7 @@ use_mathjax: true
 {% include icon-github.html username="choasup" %} /
 [SIN](https://github.com/choasup/SIN)；另外这似乎是作者的博客：[Choas Blog 有一个梦想 并非遥不可及](https://choasup.github.io/)。
 
-<span>&#9876;</span>**关于二次型的最大和最小值**，要求是单位向量，那解就是矩阵的最大和最小特征值，可以用拉格朗日乘数法求解，参考资料：[William F. Trench - THE METHOD OF
+&#9876;**关于二次型的最大和最小值**，要求是单位向量，那解就是矩阵的最大和最小特征值，可以用拉格朗日乘数法求解，参考资料：[William F. Trench - THE METHOD OF
 LAGRANGE MULTIPLIERS](http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_LAGRANGE_MULTIPLIERS.PDF)（第9页）。
 
 最近要规划一些论文的阅读，ICCV 2019的论文马上就要大波袭来，之前还有好多没看，然后[arXiv](https://arxiv.org/list/cs.CV/recent)上每天都有大量新论文，虽然很多没什么看的必要。
@@ -64,7 +64,7 @@ LAGRANGE MULTIPLIERS](http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_LAG
 
 [CCAI2018演讲实录 - 蒲慕明：脑科学与类脑机器学习2018-10-16](https://pan.baidu.com/s/1B7-phZ0ibT8LCYrqRWItAQ)。
 
-<span>&#9876;</span>**加性高斯过程**，发表于NIPS 2011：[Additive Gaussian Processes (NIPS 2011)](https://papers.nips.cc/paper/4221-additive-gaussian-processes)，[arXiv 1112.4394](https://arxiv.org/abs/1112.4394)。二作的个人主页：[Hannes Nickisch](http://hannes.nickisch.org/)。
+&#9876;**加性高斯过程**，发表于NIPS 2011：[Additive Gaussian Processes (NIPS 2011)](https://papers.nips.cc/paper/4221-additive-gaussian-processes)，[arXiv 1112.4394](https://arxiv.org/abs/1112.4394)。二作的个人主页：[Hannes Nickisch](http://hannes.nickisch.org/)。
 
 关于各种免费图床：[知乎专栏 - 盘点一下免费好用的图床](https://zhuanlan.zhihu.com/p/35270383)，感觉可以考虑[SM.MS](https://sm.ms/)，试了一下，不需要注册，可以直接粘贴图像内容（例如截图之后去网页上直接粘贴），还提供各种引用格式（例如HTML、Markdown等），挺好用的。但是我想尽量还是别用太多图，因为图通常本身比较大，可能耗费流量，也影响页面加载速度。
 
@@ -78,4 +78,34 @@ LAGRANGE MULTIPLIERS](http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_LAG
 
 ## 2019.8.10
 
-[3个方法解决百度网盘限速 （2019-08-04 更新）](https://www.runningcheese.com/baiduyun)
+[3个方法解决百度网盘限速 （2019-08-04 更新）](https://www.runningcheese.com/baiduyun)，感觉比较好用的是[PanDownload网页版](https://www.baiduwp.com/)，下载的时候速度直接到了10MB/s。第一个那个Chrome插件，总是没法自动安装到Tampermonkey里面，只好手动创建了一个新的脚本然后把代码复制过去，之后试了好几次，发现脚本都没法解析出下载链接，不仅反应慢，还总是提示说没有选择文件，不知道是什么鬼，于是只好放弃了。
+
+这几天的时间安排很不好，不规律，起得晚，做事情磨磨蹭蹭，总是拖。要么不工作，工作起来又不愿意停，结果耽误别的事情，搞得乱糟糟的。希望接下来几天能更加有计划性一些，把时间安排得更好一点。最重要的是，要有一个整体的规划。
+
+贝壳明天回来，晚上到，开心。明天白天把卫生打扫一下，然后看看要不要买点什么吃的回来。
+
+&#9876;**通过科学上网访问IPv6网站**（例如[BYRBT](https://bt.byr.cn/index.php)），参考资料：
+- [给搬瓦工 KVM 版 VPS 配置 IPv6 支持（基于 Linux CentOS 7）](https://www.bandwagonhost.net/2144.html)
+- [使用shadowsocks，搭建ipv6 VPN，让ipv4上ipv6，下载速度提升到100M](https://www.polarxiong.com/archives/%E6%90%AD%E5%BB%BAipv6-VPN-%E8%AE%A9ipv4%E4%B8%8Aipv6-%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%8F%90%E5%8D%87%E5%88%B0100M.html)
+
+根据上面的两个参考资料，这里也大概记录一下自己的操作过程。考虑访问BYRBT，并进行上传和下载。需要做的有两步：第一步，让自己用于科学上网的服务器能够访问IPv6网站；第二步，在下载软件如utorrent中设置代理。
+
+第一步按照如下流程操作：
+1. 获取IPv6：访问[Tunnel Broker](https://www.tunnelbroker.net)
+  - 注册账号，注册时要填写好正确的信息，例如城市和邮政编码要对上，手机号要符合手机号的规则，要不然可能会提示信息无效。可以不填写真实信息，暂时不清楚会有什么影响，感觉保证邮箱能用应该就可以（用于接收验证链接以激活账户）。
+  - 成功注册和激活之后登陆，创建隧道，使用“Create Regular Tunnel”，在打开的页面上输入自己服务器的IPv4地址，然后选择隧道服务器的位置（这里我选择了默认的“Los Angeles”），然后点击“Create”创建即可。
+  - 在创建之后跳转的页面上，选择“Example Configurations”，下拉菜单选择“Linux-net-tools”（这个可用于CentOS），之后就会出现需要在服务器上进行配置的命令，把这些命令复制粘贴下来。
+2. 在服务器上配置IPv6
+  - 可以先常试一下，将前面复制的命令在命令行执行一遍，然后`ping6 google.com`，看能否通过IPv6访问Google，如果可以的话，说明没什么问题。
+  - 之后要做的就是设置服务器启动时自动执行这些命令，新建一个文件如`/root/ipv6.sh`，将命令粘贴到这个文件里面去，然后给这个文件增加执行权限`chmod +x /root/ipv6.sh`，然后设置启动时执行这个脚本，即在`/etc/rc.d/rc.local`的末尾添加一行`sh /root/ipv6.sh`。
+  - 最后配置科学上网工具，考虑SS，这里只需要修改配置文件`/etc/s*****s****.json`，将`server`字段的值设置为`::`（原来应该是`0.0.0.0`），即写成`"server":"::";`，注意这里引号和冒号混在一起了，不要写错。
+
+第二步按照如下流程操作：
+1. 考虑utorrent，启动软件
+  - 进入设置，在“连接”选项中，对代理服务进行设置，类型设置为`Socks5`，代理设置为`127.0.0.1`，端口设置为`1080`（这块应该根据实际情况来设置），勾选“通过代理服务器解析主机名”和“对于点对点连接使用代理服务器”。
+  - 之前我设置了IP地址过滤，只使用IPv6，现在我把这个去掉，即把软件目录下的`ipfilter.dat`文件的内容清空（还可以继续在设置的高级选项中，将`ipfilter.enable`设置为`false`，不过这个我没有改）。
+
+上面两步之后，应该来说是可以正常访问BYRBT并进行上传下载了，但是我一开始却碰到无法下载的问题，下载速度一直为0。在BYRBT的帮助中查了一番之后，我检查了一下tracker，发现我下载文件的tracker的状态一直是“超时”、“无法连接服务器”、“更新中”等等这样的状态，而上传的文件则是“工作中”，之后我猛然发现上传时用的tracker是`http`开头，而下载则是`https`，于是我手动把下载文件的tracker改成了`http`，速度瞬间就有了。中间看的一些帮助的是：
+- [FAQ 43：我的种子怎么都红了？Tracker是干嘛的？](https://bt.byr.cn/faq.php#question43)
+- [ut红种状态解决办法汇总](https://bt.byr.cn/forums.php?action=viewtopic&forumid=9&topicid=618)
+- [[原创]简单易懂的PT原理教学[可解释上传/下载速度、Tracker/Passkey、红种等]](https://bt.byr.cn/forums.php?action=viewtopic&forumid=9&topicid=684)
