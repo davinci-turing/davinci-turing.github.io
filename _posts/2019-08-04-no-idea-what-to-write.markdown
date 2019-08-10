@@ -75,3 +75,7 @@ LAGRANGE MULTIPLIERS](http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_LAG
 - RepPoints: Point Set Representation for Object Detection (ICCV 2019, [arXiv 1904.11490](https://arxiv.org/abs/1904.11490))，另外，RepPoints作者认为图森这个AlignDet的工作是RepPoints的特例（其实就是他们的基线模型），并分析了[实现上的一些差异](https://www.zhihu.com/question/338959309/answer/780428729)。
 
 今天查最大似然估计和最大后验估计的时候，发现[ESL](https://web.stanford.edu/~hastie/ElemStatLearn/)的一个小错误，我手头纸质版本的232页公式(8.23)，分母的积分应该是对参数\\(\theta\\)而不是对数据\\(\mathbf{Z}\\)，否则分母上\\(\mathbf{Z}\\)都积分积没了，怎么会得到“后验”呢。
+
+## 2019.8.10
+
+[3个方法解决百度网盘限速 （2019-08-04 更新）](https://www.runningcheese.com/baiduyun)

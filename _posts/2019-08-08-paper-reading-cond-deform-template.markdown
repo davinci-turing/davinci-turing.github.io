@@ -1,19 +1,17 @@
 ---
 layout: post
-title:  "论文阅读"
+title:  "条件化可变形模板 (arXiv 1908.02738)"
 date:   2019-08-08 10:08:00 +0800
 date_update: 2019-08-10 14:19:00 +0800
-categories: 学术科研
-tags: [机器学习,深度学习]
+categories: 论文阅读
+tags: [机器学习,深度学习,概率模型,计算机视觉,可变形模板,图像配准]
 author: 幽玄
 use_mathjax: true
 ---
 
-## 可变形模板 Deformable Template
-
-&#9733;&#9733;&#9733; Learning Conditional Deformable Templates with Convolutional Networks. [arXiv 1908.02738](https://arxiv.org/abs/1908.02738)
-- 关键词：条件化模板，形变场，极大似然估计，微分同胚变换 diffeomorphism transform
-- 医疗图像处理，图像配准，对齐 alignment，对应关系 correspondence
+&#9733;&#9733;&#9733;&#9734; Learning Conditional Deformable Templates with Convolutional Networks. [[arXiv 1908.02738](https://arxiv.org/abs/1908.02738)]
+- 问题关键词：医疗图像处理，图像配准，对齐 alignment，对应关系 correspondence
+- 方法关键词：条件化模板，形变场，极大似然估计，微分同胚变换 diffeomorphism transform
 - 模板可以看成是对数据变化模式的概括。
 
 作者信息：
@@ -42,7 +40,7 @@ use_mathjax: true
 - 不同属性的图像采用不同的模板，那么相互之间怎么比较形变场呢？似乎只能在同属性的图像之间比较了。不过这样看来不同属性带来的差别也许能方便地看出来，直接比较对应的模板就可以，学出来的可能比平均图像要更有代表性一点。
 - 为什么不直接预测形变场和在形变场上加约束，而要先预测速度场再积分得到形变场？可能和微分同胚变换有关？
 
-下面再具体看一下文章给出的**概率模型**。首先是问题的形式化，这里要求解的就是两个神经网络的参数，一个生成模板，一个进行配准，用最大后验估计（论文中说的是“似然”，但是我觉得这里应该是最大后验估计/贝叶斯估计）对两个任务进行优化（注意下面的\\(\mathcal{V}\\)其实就是对应于用来配准的神经网络）：
+下面还是来具体看一下文章给出的**概率模型**。首先是问题的形式化，这里要求解的就是两个神经网络的参数，一个生成模板，一个进行配准，用最大后验估计（论文中说的是“似然”，但是我觉得这里应该是最大后验估计/贝叶斯估计）对两个任务进行优化（注意下面的\\(\mathcal{V}\\)其实就是对应于用来配准的神经网络）：
 \\[ \begin{align}
 \hat{\theta_t}, \hat{\mathcal{V}} & = \arg\max_{\theta_t, \mathcal{V}} \log p_{\theta_t}(\mathcal{V} \vert \mathcal{X}, \mathcal{A}), \newline
 & = \arg\max_{\theta_t, \mathcal{V}} \log p_{\theta_t}(\mathcal{X} \vert \mathcal{V}; \mathcal{A}) + \log p(\mathcal{V}).
@@ -57,7 +55,7 @@ use_mathjax: true
 
 先验取对数的结果如下：
 \\[ \log p(\mathcal{V}) = -\gamma \Vert \bar{u}\_v \Vert^2 - \sum_{i=1}^n \frac{d}{2} \lambda_d \Vert u\_{v_i} \Vert^2 + \sum_{i=1}^n \frac{1}{2} \lambda_a \Vert \nabla u_{v_i} \Vert^2 + \mathrm{const}, \\]
-其中\\(d\\)为节点度数，\\(\nabla u_{v_i}\\)是形变场\\(\phi_{v_i}\\)也即偏移\\(u_{v_i}\\)的梯度。注意这里严格来说不应该取等号，另外原文公式(4)符号有点小问题，用的\\(u_i\\)，这里我改成了和原文公式(3)一致的\\(u_{v_i}\\)，不过用哪种都不影响理解。这个式子第一项很直接，第二项也好理解，度矩阵是对角阵，而每个像素的度应该是一样的，所以直接统一乘以度数\\(d\\)即可，&#9889;第三项暂时不知道怎么过来的，因为邻接矩阵照理来说是不包含负数的，怎么会计算出梯度来呢？原文这块引用了[参考文献17](https://arxiv.org/abs/1805.04605)，是作者之前的一个文章，里面确实写了相关的结果，但是也没有推导，结果在引文公式(6)下面，但是那块是直接用的拉普拉斯矩阵得到的结果 [[1]](#fn_gauss_precision_matrix_result)，而不是邻接矩阵，让人怀疑这两个地方是否矛盾，至少有一个不对？关于多元高斯分布的对数似然，可以参考[Wikipedia](https://en.wikipedia.org/wiki/Multivariate_normal_distribution#Likelihood_function) [[2]](#fn_gauss_log_likelihood)。
+其中\\(d\\)为节点度数，\\(\nabla u_{v_i}\\)是形变场\\(\phi_{v_i}\\)也即偏移\\(u_{v_i}\\)的梯度。注意这里严格来说不应该取等号，另外原文公式(4)符号有点小问题，用的\\(u_i\\)，这里我改成了和原文公式(3)一致的\\(u_{v_i}\\)，不过用哪种都不影响理解。这个式子第一项很直接，第二项也好理解，度矩阵是对角阵，而每个像素的度应该是一样的，所以直接统一乘以度数\\(d\\)即可，&#9889;第三项暂时不知道怎么过来的，因为邻接矩阵照理来说是不包含负数的，怎么会计算出梯度来呢？原文这块引用了[参考文献17](https://arxiv.org/abs/1805.04605)，是作者之前的一个文章，里面确实写了相关的结果，但是也没有推导，结果在引文公式(6)下面，但是那块是直接用的拉普拉斯矩阵得到的结果 <sup>[[1]](#fn_gauss_precision_matrix_result)</sup>，而不是邻接矩阵，让人怀疑这两个地方是否矛盾，至少有一个不对？关于多元高斯分布的对数似然，可以参考[Wikipedia](https://en.wikipedia.org/wiki/Multivariate_normal_distribution#Likelihood_function) <sup>[[2]](#fn_gauss_log_likelihood)</sup>。
 
 先验的第一项是希望从整个数据集上平均下来看，形变的幅度是比较小的，即学到的模板平均来看和样例都非常接近；第二项和第三项是希望最小化单个样例上形变的幅度和光滑性，&#9889;这里我感觉很疑惑，为什么要避免光滑？一般情况不都是希望尽量光滑吗？而且论文也说了希望“光滑和无偏”，无偏可以理解，大致对应第一项和第二项，但是光滑这一点上现在反过来了？
 
@@ -90,7 +88,7 @@ use_mathjax: true
 
 不知不觉竟然精读了这篇文章，花了差不多两天时间，emmm... &#x1F610;
 
-<br/><br/>
+<br/>
 
 <a name="fn_gauss_precision_matrix_result">[1]</a> \\( \Sigma_z^{-1} = \Lambda_z = \lambda L \\)，\\( \mu^{\mathrm{T}} \Lambda_z \mu = \frac{\lambda}{2} \sum_i \sum_{j\in N(i)} (\mu[i] - \mu[j])^2 \\)，其中\\(L\\)是拉普拉斯矩阵，\\(N(i)\\)表示体素\\(i\\)（voxel）的邻居集合（这篇文章考虑到而是三维校准，所以是体素不是像素）。这里我对原文公式按照自己的理解做了修改，外层求和增加下标\\(i\\)，内层求和\\(N(I)\\)改成\\(N(i)\\)，这样公式更加清晰好懂，另外在不影响理解的情况下，我去掉了\\(\mu\\)的下标。
 
