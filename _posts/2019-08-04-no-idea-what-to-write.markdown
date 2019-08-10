@@ -2,7 +2,7 @@
 layout: post
 title:  "不是迷途的羔羊"
 date:   2019-08-04 21:30:00 +0800
-date_update: 2019-08-10 00:22:00 +0800
+date_update: 2019-08-10 00:30:00 +0800
 categories: 流水账
 tags: [心情,随想,记录]
 author: 幽玄
@@ -109,3 +109,11 @@ LAGRANGE MULTIPLIERS](http://ramanujan.math.trinity.edu/wtrench/texts/TRENCH_LAG
 - [FAQ 43：我的种子怎么都红了？Tracker是干嘛的？](https://bt.byr.cn/faq.php#question43)
 - [ut红种状态解决办法汇总](https://bt.byr.cn/forums.php?action=viewtopic&forumid=9&topicid=618)
 - [[原创]简单易懂的PT原理教学[可解释上传/下载速度、Tracker/Passkey、红种等]](https://bt.byr.cn/forums.php?action=viewtopic&forumid=9&topicid=684)
+
+对了，我其实还看了这个帖子：[搬瓦工VPS KVM 方案如何使用IPv6 [思路]](https://www.bandwagonhost.net/512.html)，然后最开始的时候在`/etc/sysctl.conf`文件中增加了如下三行：
+```
+net.ipv6.conf.all.disable_ipv6 = 0
+net.ipv6.conf.default.disable_ipv6 = 0
+net.ipv6.conf.lo.disable_ipv6 = 0
+```
+目前不知道这三行是否有必要，没有尝试去掉之后还行不行。
