@@ -272,4 +272,12 @@
   hr {
     margin: 2em 0;
   }
+
+  sup {
+    @include relative-font-size(0.6875);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(0.6875);
+    }
+  }
 }
